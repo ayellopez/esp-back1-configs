@@ -1,0 +1,20 @@
+server:
+  port: 0
+spring:
+  application:
+    name: catalog-service
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    registry-fetch-interval-seconds: 5
+    health-check:
+      enabled: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+
+
+
